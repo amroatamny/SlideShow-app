@@ -1,0 +1,2 @@
+# SlideShow-app
+ javaScript & bootstrap
