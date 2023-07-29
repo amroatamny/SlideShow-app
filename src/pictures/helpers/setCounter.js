@@ -1,5 +1,3 @@
-// const pictures = [{}, {}, {}];
-// let counter = 0;
 const setCounter = (array, counter, controller = "") => {
   let newCounter;
   if (controller === "next") {
@@ -12,4 +10,5 @@ const setCounter = (array, counter, controller = "") => {
   }
   return 0;
 };
+// console.log(pictures);
 export default setCounter;
