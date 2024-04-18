@@ -95,7 +95,7 @@
     </header>
 
     <main>
-      <div id="home-page" class="d-block">
+      <div id="home-page" class="d-none">
         <div class="container">
           <div class="center">
             <div class="col-12 col-md-10 col-xl-8">
@@ -153,40 +153,253 @@
 
       <div id="create-pic-page" class="d-none">
         <div class="container">
-          <div class="center">
-            <div class="col-12 col-md-10 col-xl-8">
-              <h1 class="display-4">CREATE PIC</h1>
-              <h2 class="fs-5">here you can creat your picture...</h2>
-              <hr />
-            </div>
+          <div class="center" style="height: 87vh">
+            <form
+              class="form p-2 col-12 col-md-6 col-xl-4 border"
+              style="min-width: 280px"
+            >
+              <h1 class="text-center fs-5">CREATE NEW PIC</h1>
+              <div>
+                <label for="creat-pic-url"> Source</label>
+                <input
+                  id="creat-pic-url"
+                  type="text"
+                  class="form-control mb-2"
+                  name="url"
+                  autocomplete="off"
+                />
+                <span id="creat-pic-url-error" class="text-danger"></span>
+              </div>
+              <div>
+                <label for="create-pic-alt "> Description</label>
+                <input
+                  id="create-pic-alt"
+                  type="text"
+                  class="form-control mb-2"
+                  name="alt"
+                  autocomplete="off"
+                />
+                <span id="create-pic-alt-error" class="text-danger"></span>
+              </div>
+              <div>
+                <label for="create-pic-credit"> Credit</label>
+                <input
+                  id="create-pic-credit"
+                  type="text"
+                  class="form-control mb-2"
+                  name="credits"
+                  autocomplete="off"
+                />
+                <span id="create-pic-credit-error" class="text-danger"></span>
+              </div>
+              <div>
+                <label for="create-pic-price">Price</label>
+                <input
+                  id="create-pic-price"
+                  type="number"
+                  class="form-control mb-2"
+                  name="price"
+                  autocomplete="off"
+                />
+                <span id="create-pic-price-error" class="text-danger"></span>
+              </div>
+              <input
+                id="create-pic-cancel-btn"
+                type="button"
+                value="cancel"
+                class="btn btn-secondary col-12 mb-2"
+              />
+              <input
+                id="create-pic-submit-btn"
+                type="button"
+                value="submit"
+                class="btn btn-primary col-12 mb-2"
+                disabled
+              />
+            </form>
           </div>
-          <p>creat pic content</p>
         </div>
       </div>
 
       <div id="login-page" class="d-none">
         <div class="container">
-          <div class="center">
-            <div class="col-12 col-md-10 col-xl-8">
-              <h1 class="display-4">LOGIN PAGE</h1>
-              <h2 class="fs-5">here you can login...</h2>
-              <hr />
-            </div>
+          <div class="center" style="height: 87vh">
+            <form
+              class="form p-2 col-12 col-md-6 col-xl-4 border"
+              style="min-width: 280px"
+            >
+              <h1 class="text-center fs-5">login page</h1>
+              <div>
+                <label for="login-email-page">email</label>
+                <input
+                  name="email"
+                  type="email"
+                  id="login-email-page"
+                  class="form-control mb-2"
+                  autocomplete="off"
+                />
+                <span id="login-email-page-error" class="text-danger"></span>
+              </div>
+              <div>
+                <label for="login-password-page">password</label>
+                <input
+                  type="password"
+                  id="login-password-page"
+                  class="form-control mb-2"
+                  name="password"
+                  autocomplete="off"
+                />
+                <span id="login-password-page-error" class="text-danger"></span>
+              </div>
+              <input
+                id="login-submit-btn"
+                type="button"
+                value="submit"
+                class="btn btn-primary col-12 mb-2"
+                disabled
+              />
+            </form>
           </div>
-          <p>login page content</p>
         </div>
       </div>
 
-      <div id="signup-page" class="d-none">
+      <div id="signup-page" class="d-block">
         <div class="container">
-          <div class="center">
-            <div class="col-12 col-md-10 col-xl-8">
-              <h1 class="display-4">SIGNUP PAGE</h1>
-              <h2 class="fs-5">here you can signup...</h2>
-              <hr />
-            </div>
+          <div class="center" style="height: 87vh">
+            <form
+              class="form p-2 col-12 col-md-6 col-xl-4 border"
+              style="min-width: 580px"
+            >
+              <h1 class="text-center fs-7">signup</h1>
+              <div>
+                <label for="signup-name">name</label>
+                <input
+                  name="name"
+                  id="signup-name"
+                  type="text"
+                  class="form-control mb-2"
+                  autocomplete="off"
+                />
+                <span id="signup-name-error" class="text-danger"></span>
+              </div>
+              <div>
+                <label for="signup-email">email</label>
+                <input
+                  name="email"
+                  id="signup-email"
+                  type="text"
+                  class="form-control mb-2"
+                  autocomplete="off"
+                />
+                <span id="signup-email-error" class="text-danger"></span>
+              </div>
+              <div>
+                <label for="signup-password">password</label>
+                <input
+                  name="password"
+                  id="signup-password"
+                  type="password"
+                  class="form-control mb-2"
+                  autocomplete="off"
+                />
+                <span id="signup-password-error" class="text-danger"></span>
+              </div>
+              <div>
+                <label for="signup-phone">phone</label>
+                <input
+                  name="phone"
+                  id="signup-phone"
+                  type="number"
+                  class="form-control mb-2"
+                  autocomplete="off"
+                />
+                <span id="signup-phone-error" class="text-danger"></span>
+              </div>
+              <div>
+                <label for="signup-address">address</label>
+                <input
+                  name="address"
+                  id="signup-address"
+                  type="text"
+                  class="form-control col-12 mb-2"
+                  autocomplete="off"
+                />
+                <span id="signup-address-error" class="text-danger"></span>
+              </div>
+              <!-- <div>
+                <label for="signup-country">country</label>
+                <input
+                  name="country"
+                  id="signup-country"
+                  type="text"
+                  class="form-control col-12 mb-2"
+                  autocomplete="off"
+                />
+                <span id="signup-country-error" class="text-danger"></span>
+              </div>
+              <div>
+                <label for="signup-city">city</label>
+                <input
+                  name="city"
+                  id="signup-city"
+                  type="text"
+                  class="form-control col-12 mb-2"
+                  autocomplete="off"
+                />
+                <span id="signup-city-error" class="text-danger"></span>
+              </div>
+              <div>
+                <label for="signup-street">street</label>
+                <input
+                  name="street"
+                  id="signup-street"
+                  type="text"
+                  class="form-control col-12 mb-2"
+                  autocomplete="off"
+                />
+                <span id="signup-street-error" class="text-danger"></span>
+              </div>
+              <div>
+                <label for="signup-houseNumber">houseNumber</label>
+                <input
+                  name="houseNumber"
+                  id="signup-houseNumber"
+                  type="text"
+                  class="form-control col-12 mb-2"
+                  autocomplete="off"
+                />
+                <span id="signup-houseNumber-error" class="text-danger"></span>
+              </div>
+              <div>
+                <label for="signup-zip">zip</label>
+                <input
+                  name="zip"
+                  id="signup-zip"
+                  type="text"
+                  class="form-control col-12 mb-2"
+                  autocomplete="off"
+                />
+                <span id="signup-zip-error" class="text-danger"></span>
+              </div> -->
+              <div>
+                <input
+                  type="button"
+                  class="btn btn-secondary col-12 mb-2"
+                  id="signup-cancel-btn"
+                  value="cancel"
+                />
+              </div>
+              <div>
+                <input
+                  type="button"
+                  class="btn btn-primary col-12 mb-2"
+                  id="signup-submit-btn"
+                  value="submit"
+                  disabled
+                />
+              </div>
+            </form>
           </div>
-          <p>signup page content</p>
         </div>
       </div>
 
